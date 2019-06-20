@@ -4,6 +4,39 @@ Setup instructions for raspberry pi for Embryo standalone device
 
 ## Setup Instrctions
 
+Download [raspbian OS](https://www.raspberrypi.org/downloads/raspbian/) and install to SD card.
+
+If using windows use [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/)
+
+after installing open cmd and navigate to boot Volume
+
+```bash
+notepad ssh.
+```
+Save the ssh. file to enable ssh
+
+```bash
+notepad wpa_supplicant.conf
+```
+save the following in the 'wpa_supplicant.conf' file.
+
+```bash
+country=US
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+ ssid="Shafiee Lab Team"
+ scan_ssid=1
+ psk="Hslab2017"
+ key_mgmt=WPA-PSK
+}
+
+```
+
+
+
+
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```bash
