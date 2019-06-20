@@ -42,29 +42,51 @@ Copy `Embryo\` folder from this repo to the home directory usually at `/home/pi/
 
 ## Package Installations
 
-
-
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+First, update the available packages by typing the following command into the Terminal:
 
 ```bash
-pip install foobar
+sudo apt-get update
 ```
 
-## Usage
+#### Install Python3 and virtualenv
+```
+sudo apt-get install python3-pip
 
-```python
-import foobar
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+sudo su
+pip3 install virtualenv 
+exit
+
+cd ~/Embryo/scripts
+virtualenv py3
+source py3/bin/activate
+pip3 install picamera flask
 ```
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+
+
+### Install apache2 and Flask server
+
+
+
+Then, install the `apache2` package with this command:
+
+```bash 
+sudo apt-get install apache2 -y
+sudo apt-get install libapache2-mod-wsgi-py3
+```
+
+## Setup Flask server
+
+
+
+Now disable default website with the following command:
+
+```bash
+cd /etc/apache2/sites-available/
+sudo a2dissite 000-default.conf 
+```
+
+
