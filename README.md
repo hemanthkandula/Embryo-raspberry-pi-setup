@@ -84,9 +84,49 @@ sudo apt-get install libapache2-mod-wsgi-py3
 
 Now disable default website with the following command:
 
-```bash
+```
 cd /etc/apache2/sites-available/
 sudo a2dissite 000-default.conf 
 ```
 
+Create a Flask Server configuration file: `flask_server.conf`
+```bash
+sudo nano flask_server.conf
+```
+```
+<VirtualHost *:80>
 
+
+    ErrorLog /home/pi/Embryo/scripts/error.log
+    WSGIDaemonProcess  flask_server user=pi group=www-data  threads=5
+    WSGIScriptAlias / /home/pi/Embryo/scripts/flask_server.wsgi
+
+    <Directory /home/pi/Embryo/scripts/>
+        WSGIProcessGroup flask_server
+        WSGIApplicationGroup %{GLOBAL}
+        WSGIScriptReloading On
+        Require all granted
+
+
+    </Directory>
+    #ErrorLog /home/pi/Embryo/scripts/logs/error.log
+</VirtualHost>
+```
+Now enable configuration by following command:
+```bash
+sudo a2ensite flask_server.conf
+sudo systemctl reload apache2
+```
+
+Connect pi-camera v2.1 and enable camera  by the following command:
+```bash
+sudo raspi-config
+```
+navigate to `interfacing options` -> `camera` -> `yes`
+
+Now `reboot` the pi
+
+The server should be running verify it by going to `IPAddress` in browser from the same network as Pi.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
