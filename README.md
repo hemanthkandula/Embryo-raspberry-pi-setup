@@ -74,8 +74,7 @@ pip3 install picamera flask
 Then, install the `apache2` package with this command:
 
 ```bash 
-sudo apt-get install apache2 -y
-sudo apt-get install libapache2-mod-wsgi-py3
+sudo apt-get install apache2 libapache2-mod-wsgi-py3 -y
 ```
 
 ## Setup Flask server
