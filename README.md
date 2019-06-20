@@ -2,7 +2,7 @@
 
 Setup instructions for raspberry pi for Embryo standalone device
 
-## Setup Instrctions
+## Setup Instructions
 
 Download [raspbian OS](https://www.raspberrypi.org/downloads/raspbian/) and install to SD card.
 
@@ -13,12 +13,12 @@ after installing open cmd and navigate to boot Volume
 ```bash
 notepad ssh.
 ```
-Save the ssh. file to enable ssh
+Save the `ssh.` file to enable ssh
 
 ```bash
 notepad wpa_supplicant.conf
 ```
-save the following in the 'wpa_supplicant.conf' file.
+save the following in the `wpa_supplicant.conf` file.
 
 ```bash
 country=US
@@ -33,6 +33,14 @@ network={
 }
 
 ```
+
+Now boot the raspberry pi it should be connected to WiFi network.
+
+
+Copy `Embryo\` folder from this repo to the home directory usually at `/home/pi/`
+
+
+## Package Installations
 
 
 
