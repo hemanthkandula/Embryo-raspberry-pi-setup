@@ -8,8 +8,8 @@ import  shutil
 #app = Flask(__name__)
 
 camera = PiCamera()
-camera.resolution = (2592 ,1944 )
-#camera.resolution = (3280,2464 )
+#camera.resolution = (2592 ,1944 )
+camera.resolution = (3280,2464 )
 #print("Starting preview.... wait 1 sec...")
 #camera.start_preview()
 #time.sleep(2)
