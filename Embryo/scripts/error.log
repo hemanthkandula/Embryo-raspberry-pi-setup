@@ -1,0 +1,172 @@
+mmal: mmal_vc_component_create: failed to create component 'vc.ril.camera' (1:ENOMEM)
+mmal: mmal_component_create_core: could not create component 'vc.ril.camera' (1)
+[Wed Jun 12 19:16:59.531716 2019] [wsgi:error] [pid 5546:tid 1966752816] [remote 192.168.50.129:46734] mod_wsgi (pid=5546): Target WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi' cannot be loaded as Python module.
+[Wed Jun 12 19:16:59.531836 2019] [wsgi:error] [pid 5546:tid 1966752816] [remote 192.168.50.129:46734] mod_wsgi (pid=5546): Exception occurred processing WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi'.
+[Wed Jun 12 19:16:59.531923 2019] [wsgi:error] [pid 5546:tid 1966752816] [remote 192.168.50.129:46734] Traceback (most recent call last):
+[Wed Jun 12 19:16:59.532001 2019] [wsgi:error] [pid 5546:tid 1966752816] [remote 192.168.50.129:46734]   File "/home/pi/Embryo/scripts/flask_server.wsgi", line 20, in <module>
+[Wed Jun 12 19:16:59.532252 2019] [wsgi:error] [pid 5546:tid 1966752816] [remote 192.168.50.129:46734]     from server_main  import app as application
+[Wed Jun 12 19:16:59.532296 2019] [wsgi:error] [pid 5546:tid 1966752816] [remote 192.168.50.129:46734]   File "/home/pi/Embryo/scripts/server_main.py", line 10, in <module>
+[Wed Jun 12 19:16:59.532461 2019] [wsgi:error] [pid 5546:tid 1966752816] [remote 192.168.50.129:46734]     camera = PiCamera()
+[Wed Jun 12 19:16:59.532503 2019] [wsgi:error] [pid 5546:tid 1966752816] [remote 192.168.50.129:46734]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 431, in __init__
+[Wed Jun 12 19:16:59.537106 2019] [wsgi:error] [pid 5546:tid 1966752816] [remote 192.168.50.129:46734]     self._init_camera(camera_num, stereo_mode, stereo_decimate)
+[Wed Jun 12 19:16:59.537248 2019] [wsgi:error] [pid 5546:tid 1966752816] [remote 192.168.50.129:46734]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 460, in _init_camera
+[Wed Jun 12 19:16:59.537380 2019] [wsgi:error] [pid 5546:tid 1966752816] [remote 192.168.50.129:46734]     "Camera is not enabled. Try running 'sudo raspi-config' "
+[Wed Jun 12 19:16:59.537483 2019] [wsgi:error] [pid 5546:tid 1966752816] [remote 192.168.50.129:46734] PiCameraError: Camera is not enabled. Try running 'sudo raspi-config' and ensure that the camera has been enabled.
+mmal: mmal_vc_component_create: failed to create component 'vc.ril.camera' (1:ENOMEM)
+mmal: mmal_component_create_core: could not create component 'vc.ril.camera' (1)
+[Wed Jun 12 19:16:59.832701 2019] [wsgi:error] [pid 5546:tid 1933198384] [remote 192.168.50.129:46735] mod_wsgi (pid=5546): Target WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi' cannot be loaded as Python module.
+[Wed Jun 12 19:16:59.832765 2019] [wsgi:error] [pid 5546:tid 1933198384] [remote 192.168.50.129:46735] mod_wsgi (pid=5546): Exception occurred processing WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi'.
+[Wed Jun 12 19:16:59.832841 2019] [wsgi:error] [pid 5546:tid 1933198384] [remote 192.168.50.129:46735] Traceback (most recent call last):
+[Wed Jun 12 19:16:59.832909 2019] [wsgi:error] [pid 5546:tid 1933198384] [remote 192.168.50.129:46735]   File "/home/pi/Embryo/scripts/flask_server.wsgi", line 20, in <module>
+[Wed Jun 12 19:16:59.833025 2019] [wsgi:error] [pid 5546:tid 1933198384] [remote 192.168.50.129:46735]     from server_main  import app as application
+[Wed Jun 12 19:16:59.833066 2019] [wsgi:error] [pid 5546:tid 1933198384] [remote 192.168.50.129:46735]   File "/home/pi/Embryo/scripts/server_main.py", line 10, in <module>
+[Wed Jun 12 19:16:59.833132 2019] [wsgi:error] [pid 5546:tid 1933198384] [remote 192.168.50.129:46735]     camera = PiCamera()
+[Wed Jun 12 19:16:59.833170 2019] [wsgi:error] [pid 5546:tid 1933198384] [remote 192.168.50.129:46735]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 431, in __init__
+[Wed Jun 12 19:16:59.833250 2019] [wsgi:error] [pid 5546:tid 1933198384] [remote 192.168.50.129:46735]     self._init_camera(camera_num, stereo_mode, stereo_decimate)
+[Wed Jun 12 19:16:59.833290 2019] [wsgi:error] [pid 5546:tid 1933198384] [remote 192.168.50.129:46735]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 460, in _init_camera
+[Wed Jun 12 19:16:59.833395 2019] [wsgi:error] [pid 5546:tid 1933198384] [remote 192.168.50.129:46735]     "Camera is not enabled. Try running 'sudo raspi-config' "
+[Wed Jun 12 19:16:59.833471 2019] [wsgi:error] [pid 5546:tid 1933198384] [remote 192.168.50.129:46735] PiCameraError: Camera is not enabled. Try running 'sudo raspi-config' and ensure that the camera has been enabled.
+mmal: mmal_vc_component_create: failed to create component 'vc.ril.camera' (1:ENOMEM)
+mmal: mmal_component_create_core: could not create component 'vc.ril.camera' (1)
+[Thu Jun 13 09:48:36.619338 2019] [wsgi:error] [pid 532:tid 1966466096] [remote 192.168.1.48:53475] mod_wsgi (pid=532): Target WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi' cannot be loaded as Python module.
+[Thu Jun 13 09:48:36.619452 2019] [wsgi:error] [pid 532:tid 1966466096] [remote 192.168.1.48:53475] mod_wsgi (pid=532): Exception occurred processing WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi'.
+[Thu Jun 13 09:48:36.619548 2019] [wsgi:error] [pid 532:tid 1966466096] [remote 192.168.1.48:53475] Traceback (most recent call last):
+[Thu Jun 13 09:48:36.619627 2019] [wsgi:error] [pid 532:tid 1966466096] [remote 192.168.1.48:53475]   File "/home/pi/Embryo/scripts/flask_server.wsgi", line 20, in <module>
+[Thu Jun 13 09:48:36.619881 2019] [wsgi:error] [pid 532:tid 1966466096] [remote 192.168.1.48:53475]     from server_main  import app as application
+[Thu Jun 13 09:48:36.619926 2019] [wsgi:error] [pid 532:tid 1966466096] [remote 192.168.1.48:53475]   File "/home/pi/Embryo/scripts/server_main.py", line 10, in <module>
+[Thu Jun 13 09:48:36.620799 2019] [wsgi:error] [pid 532:tid 1966466096] [remote 192.168.1.48:53475]     camera = PiCamera()
+[Thu Jun 13 09:48:36.620858 2019] [wsgi:error] [pid 532:tid 1966466096] [remote 192.168.1.48:53475]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 431, in __init__
+[Thu Jun 13 09:48:36.635289 2019] [wsgi:error] [pid 532:tid 1966466096] [remote 192.168.1.48:53475]     self._init_camera(camera_num, stereo_mode, stereo_decimate)
+[Thu Jun 13 09:48:36.635446 2019] [wsgi:error] [pid 532:tid 1966466096] [remote 192.168.1.48:53475]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 460, in _init_camera
+[Thu Jun 13 09:48:36.635577 2019] [wsgi:error] [pid 532:tid 1966466096] [remote 192.168.1.48:53475]     "Camera is not enabled. Try running 'sudo raspi-config' "
+[Thu Jun 13 09:48:36.635685 2019] [wsgi:error] [pid 532:tid 1966466096] [remote 192.168.1.48:53475] PiCameraError: Camera is not enabled. Try running 'sudo raspi-config' and ensure that the camera has been enabled.
+mmal: mmal_vc_component_create: failed to create component 'vc.ril.camera' (1:ENOMEM)
+mmal: mmal_component_create_core: could not create component 'vc.ril.camera' (1)
+[Thu Jun 13 09:48:36.994748 2019] [wsgi:error] [pid 532:tid 1932911664] [remote 192.168.1.48:53476] mod_wsgi (pid=532): Target WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi' cannot be loaded as Python module.
+[Thu Jun 13 09:48:36.994811 2019] [wsgi:error] [pid 532:tid 1932911664] [remote 192.168.1.48:53476] mod_wsgi (pid=532): Exception occurred processing WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi'.
+[Thu Jun 13 09:48:36.994889 2019] [wsgi:error] [pid 532:tid 1932911664] [remote 192.168.1.48:53476] Traceback (most recent call last):
+[Thu Jun 13 09:48:36.994957 2019] [wsgi:error] [pid 532:tid 1932911664] [remote 192.168.1.48:53476]   File "/home/pi/Embryo/scripts/flask_server.wsgi", line 20, in <module>
+[Thu Jun 13 09:48:36.995072 2019] [wsgi:error] [pid 532:tid 1932911664] [remote 192.168.1.48:53476]     from server_main  import app as application
+[Thu Jun 13 09:48:36.995112 2019] [wsgi:error] [pid 532:tid 1932911664] [remote 192.168.1.48:53476]   File "/home/pi/Embryo/scripts/server_main.py", line 10, in <module>
+[Thu Jun 13 09:48:36.995178 2019] [wsgi:error] [pid 532:tid 1932911664] [remote 192.168.1.48:53476]     camera = PiCamera()
+[Thu Jun 13 09:48:36.995216 2019] [wsgi:error] [pid 532:tid 1932911664] [remote 192.168.1.48:53476]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 431, in __init__
+[Thu Jun 13 09:48:36.995334 2019] [wsgi:error] [pid 532:tid 1932911664] [remote 192.168.1.48:53476]     self._init_camera(camera_num, stereo_mode, stereo_decimate)
+[Thu Jun 13 09:48:36.995372 2019] [wsgi:error] [pid 532:tid 1932911664] [remote 192.168.1.48:53476]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 460, in _init_camera
+[Thu Jun 13 09:48:36.995438 2019] [wsgi:error] [pid 532:tid 1932911664] [remote 192.168.1.48:53476]     "Camera is not enabled. Try running 'sudo raspi-config' "
+[Thu Jun 13 09:48:36.995509 2019] [wsgi:error] [pid 532:tid 1932911664] [remote 192.168.1.48:53476] PiCameraError: Camera is not enabled. Try running 'sudo raspi-config' and ensure that the camera has been enabled.
+mmal: mmal_vc_component_create: failed to create component 'vc.ril.camera' (1:ENOMEM)
+mmal: mmal_component_create_core: could not create component 'vc.ril.camera' (1)
+[Thu Jun 13 09:50:20.174325 2019] [wsgi:error] [pid 18282:tid 1967002672] [remote 192.168.1.48:53482] mod_wsgi (pid=18282): Target WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi' cannot be loaded as Python module.
+[Thu Jun 13 09:50:20.174427 2019] [wsgi:error] [pid 18282:tid 1967002672] [remote 192.168.1.48:53482] mod_wsgi (pid=18282): Exception occurred processing WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi'.
+[Thu Jun 13 09:50:20.174518 2019] [wsgi:error] [pid 18282:tid 1967002672] [remote 192.168.1.48:53482] Traceback (most recent call last):
+[Thu Jun 13 09:50:20.174593 2019] [wsgi:error] [pid 18282:tid 1967002672] [remote 192.168.1.48:53482]   File "/home/pi/Embryo/scripts/flask_server.wsgi", line 20, in <module>
+[Thu Jun 13 09:50:20.174848 2019] [wsgi:error] [pid 18282:tid 1967002672] [remote 192.168.1.48:53482]     from server_main  import app as application
+[Thu Jun 13 09:50:20.174896 2019] [wsgi:error] [pid 18282:tid 1967002672] [remote 192.168.1.48:53482]   File "/home/pi/Embryo/scripts/server_main.py", line 10, in <module>
+[Thu Jun 13 09:50:20.175049 2019] [wsgi:error] [pid 18282:tid 1967002672] [remote 192.168.1.48:53482]     camera = PiCamera()
+[Thu Jun 13 09:50:20.175090 2019] [wsgi:error] [pid 18282:tid 1967002672] [remote 192.168.1.48:53482]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 431, in __init__
+[Thu Jun 13 09:50:20.179671 2019] [wsgi:error] [pid 18282:tid 1967002672] [remote 192.168.1.48:53482]     self._init_camera(camera_num, stereo_mode, stereo_decimate)
+[Thu Jun 13 09:50:20.179871 2019] [wsgi:error] [pid 18282:tid 1967002672] [remote 192.168.1.48:53482]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 460, in _init_camera
+[Thu Jun 13 09:50:20.180060 2019] [wsgi:error] [pid 18282:tid 1967002672] [remote 192.168.1.48:53482]     "Camera is not enabled. Try running 'sudo raspi-config' "
+[Thu Jun 13 09:50:20.180199 2019] [wsgi:error] [pid 18282:tid 1967002672] [remote 192.168.1.48:53482] PiCameraError: Camera is not enabled. Try running 'sudo raspi-config' and ensure that the camera has been enabled.
+mmal: mmal_vc_component_create: failed to create component 'vc.ril.camera' (1:ENOMEM)
+mmal: mmal_component_create_core: could not create component 'vc.ril.camera' (1)
+[Thu Jun 13 09:52:46.279676 2019] [wsgi:error] [pid 22721:tid 1967449136] [remote 192.168.1.48:53500] mod_wsgi (pid=22721): Target WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi' cannot be loaded as Python module.
+[Thu Jun 13 09:52:46.279786 2019] [wsgi:error] [pid 22721:tid 1967449136] [remote 192.168.1.48:53500] mod_wsgi (pid=22721): Exception occurred processing WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi'.
+[Thu Jun 13 09:52:46.279876 2019] [wsgi:error] [pid 22721:tid 1967449136] [remote 192.168.1.48:53500] Traceback (most recent call last):
+[Thu Jun 13 09:52:46.279952 2019] [wsgi:error] [pid 22721:tid 1967449136] [remote 192.168.1.48:53500]   File "/home/pi/Embryo/scripts/flask_server.wsgi", line 20, in <module>
+[Thu Jun 13 09:52:46.280235 2019] [wsgi:error] [pid 22721:tid 1967449136] [remote 192.168.1.48:53500]     from server_main  import app as application
+[Thu Jun 13 09:52:46.280279 2019] [wsgi:error] [pid 22721:tid 1967449136] [remote 192.168.1.48:53500]   File "/home/pi/Embryo/scripts/server_main.py", line 10, in <module>
+[Thu Jun 13 09:52:46.280426 2019] [wsgi:error] [pid 22721:tid 1967449136] [remote 192.168.1.48:53500]     camera = PiCamera()
+[Thu Jun 13 09:52:46.280465 2019] [wsgi:error] [pid 22721:tid 1967449136] [remote 192.168.1.48:53500]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 431, in __init__
+[Thu Jun 13 09:52:46.285248 2019] [wsgi:error] [pid 22721:tid 1967449136] [remote 192.168.1.48:53500]     self._init_camera(camera_num, stereo_mode, stereo_decimate)
+[Thu Jun 13 09:52:46.285448 2019] [wsgi:error] [pid 22721:tid 1967449136] [remote 192.168.1.48:53500]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 460, in _init_camera
+[Thu Jun 13 09:52:46.285619 2019] [wsgi:error] [pid 22721:tid 1967449136] [remote 192.168.1.48:53500]     "Camera is not enabled. Try running 'sudo raspi-config' "
+[Thu Jun 13 09:52:46.285779 2019] [wsgi:error] [pid 22721:tid 1967449136] [remote 192.168.1.48:53500] PiCameraError: Camera is not enabled. Try running 'sudo raspi-config' and ensure that the camera has been enabled.
+mmal: mmal_vc_component_create: failed to create component 'vc.ril.camera' (1:ENOMEM)
+mmal: mmal_component_create_core: could not create component 'vc.ril.camera' (1)
+[Thu Jun 13 09:53:18.873812 2019] [wsgi:error] [pid 23859:tid 1933112368] [remote 192.168.1.48:53504] mod_wsgi (pid=23859): Target WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi' cannot be loaded as Python module.
+[Thu Jun 13 09:53:18.873925 2019] [wsgi:error] [pid 23859:tid 1933112368] [remote 192.168.1.48:53504] mod_wsgi (pid=23859): Exception occurred processing WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi'.
+[Thu Jun 13 09:53:18.874043 2019] [wsgi:error] [pid 23859:tid 1933112368] [remote 192.168.1.48:53504] Traceback (most recent call last):
+[Thu Jun 13 09:53:18.874136 2019] [wsgi:error] [pid 23859:tid 1933112368] [remote 192.168.1.48:53504]   File "/home/pi/Embryo/scripts/flask_server.wsgi", line 20, in <module>
+[Thu Jun 13 09:53:18.874387 2019] [wsgi:error] [pid 23859:tid 1933112368] [remote 192.168.1.48:53504]     from server_main  import app as application
+[Thu Jun 13 09:53:18.874438 2019] [wsgi:error] [pid 23859:tid 1933112368] [remote 192.168.1.48:53504]   File "/home/pi/Embryo/scripts/server_main.py", line 10, in <module>
+[Thu Jun 13 09:53:18.874606 2019] [wsgi:error] [pid 23859:tid 1933112368] [remote 192.168.1.48:53504]     camera = PiCamera()
+[Thu Jun 13 09:53:18.874655 2019] [wsgi:error] [pid 23859:tid 1933112368] [remote 192.168.1.48:53504]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 431, in __init__
+[Thu Jun 13 09:53:18.879028 2019] [wsgi:error] [pid 23859:tid 1933112368] [remote 192.168.1.48:53504]     self._init_camera(camera_num, stereo_mode, stereo_decimate)
+[Thu Jun 13 09:53:18.879161 2019] [wsgi:error] [pid 23859:tid 1933112368] [remote 192.168.1.48:53504]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 460, in _init_camera
+[Thu Jun 13 09:53:18.879291 2019] [wsgi:error] [pid 23859:tid 1933112368] [remote 192.168.1.48:53504]     "Camera is not enabled. Try running 'sudo raspi-config' "
+[Thu Jun 13 09:53:18.879393 2019] [wsgi:error] [pid 23859:tid 1933112368] [remote 192.168.1.48:53504] PiCameraError: Camera is not enabled. Try running 'sudo raspi-config' and ensure that the camera has been enabled.
+mmal: mmal_vc_component_create: failed to create component 'vc.ril.camera' (1:ENOMEM)
+mmal: mmal_component_create_core: could not create component 'vc.ril.camera' (1)
+[Thu Jun 13 09:53:44.952677 2019] [wsgi:error] [pid 23859:tid 1966666800] [remote 192.168.1.48:53508] mod_wsgi (pid=23859): Target WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi' cannot be loaded as Python module.
+[Thu Jun 13 09:53:44.952766 2019] [wsgi:error] [pid 23859:tid 1966666800] [remote 192.168.1.48:53508] mod_wsgi (pid=23859): Exception occurred processing WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi'.
+[Thu Jun 13 09:53:44.952878 2019] [wsgi:error] [pid 23859:tid 1966666800] [remote 192.168.1.48:53508] Traceback (most recent call last):
+[Thu Jun 13 09:53:44.952946 2019] [wsgi:error] [pid 23859:tid 1966666800] [remote 192.168.1.48:53508]   File "/home/pi/Embryo/scripts/flask_server.wsgi", line 20, in <module>
+[Thu Jun 13 09:53:44.953061 2019] [wsgi:error] [pid 23859:tid 1966666800] [remote 192.168.1.48:53508]     from server_main  import app as application
+[Thu Jun 13 09:53:44.953101 2019] [wsgi:error] [pid 23859:tid 1966666800] [remote 192.168.1.48:53508]   File "/home/pi/Embryo/scripts/server_main.py", line 10, in <module>
+[Thu Jun 13 09:53:44.953166 2019] [wsgi:error] [pid 23859:tid 1966666800] [remote 192.168.1.48:53508]     camera = PiCamera()
+[Thu Jun 13 09:53:44.953203 2019] [wsgi:error] [pid 23859:tid 1966666800] [remote 192.168.1.48:53508]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 431, in __init__
+[Thu Jun 13 09:53:44.953280 2019] [wsgi:error] [pid 23859:tid 1966666800] [remote 192.168.1.48:53508]     self._init_camera(camera_num, stereo_mode, stereo_decimate)
+[Thu Jun 13 09:53:44.953318 2019] [wsgi:error] [pid 23859:tid 1966666800] [remote 192.168.1.48:53508]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 460, in _init_camera
+[Thu Jun 13 09:53:44.953389 2019] [wsgi:error] [pid 23859:tid 1966666800] [remote 192.168.1.48:53508]     "Camera is not enabled. Try running 'sudo raspi-config' "
+[Thu Jun 13 09:53:44.953461 2019] [wsgi:error] [pid 23859:tid 1966666800] [remote 192.168.1.48:53508] PiCameraError: Camera is not enabled. Try running 'sudo raspi-config' and ensure that the camera has been enabled.
+mmal: mmal_vc_component_create: failed to create component 'vc.ril.camera' (1:ENOMEM)
+mmal: mmal_component_create_core: could not create component 'vc.ril.camera' (1)
+[Thu Jun 13 09:53:52.039501 2019] [wsgi:error] [pid 25028:tid 1966580784] [remote 192.168.1.48:53510] mod_wsgi (pid=25028): Target WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi' cannot be loaded as Python module.
+[Thu Jun 13 09:53:52.039722 2019] [wsgi:error] [pid 25028:tid 1966580784] [remote 192.168.1.48:53510] mod_wsgi (pid=25028): Exception occurred processing WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi'.
+[Thu Jun 13 09:53:52.039894 2019] [wsgi:error] [pid 25028:tid 1966580784] [remote 192.168.1.48:53510] Traceback (most recent call last):
+[Thu Jun 13 09:53:52.040038 2019] [wsgi:error] [pid 25028:tid 1966580784] [remote 192.168.1.48:53510]   File "/home/pi/Embryo/scripts/flask_server.wsgi", line 20, in <module>
+[Thu Jun 13 09:53:52.040453 2019] [wsgi:error] [pid 25028:tid 1966580784] [remote 192.168.1.48:53510]     from server_main  import app as application
+[Thu Jun 13 09:53:52.040651 2019] [wsgi:error] [pid 25028:tid 1966580784] [remote 192.168.1.48:53510]   File "/home/pi/Embryo/scripts/server_main.py", line 10, in <module>
+[Thu Jun 13 09:53:52.041005 2019] [wsgi:error] [pid 25028:tid 1966580784] [remote 192.168.1.48:53510]     camera = PiCamera()
+[Thu Jun 13 09:53:52.041093 2019] [wsgi:error] [pid 25028:tid 1966580784] [remote 192.168.1.48:53510]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 431, in __init__
+[Thu Jun 13 09:53:52.050093 2019] [wsgi:error] [pid 25028:tid 1966580784] [remote 192.168.1.48:53510]     self._init_camera(camera_num, stereo_mode, stereo_decimate)
+[Thu Jun 13 09:53:52.050276 2019] [wsgi:error] [pid 25028:tid 1966580784] [remote 192.168.1.48:53510]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 460, in _init_camera
+[Thu Jun 13 09:53:52.050472 2019] [wsgi:error] [pid 25028:tid 1966580784] [remote 192.168.1.48:53510]     "Camera is not enabled. Try running 'sudo raspi-config' "
+[Thu Jun 13 09:53:52.050711 2019] [wsgi:error] [pid 25028:tid 1966580784] [remote 192.168.1.48:53510] PiCameraError: Camera is not enabled. Try running 'sudo raspi-config' and ensure that the camera has been enabled.
+[Thu Jun 13 10:09:31.327473 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983] mod_wsgi (pid=504): Exception occurred processing WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi'.
+[Thu Jun 13 10:09:31.331409 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983] Traceback (most recent call last):
+[Thu Jun 13 10:09:31.331574 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1997, in __call__
+[Thu Jun 13 10:09:31.340562 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]     return self.wsgi_app(environ, start_response)
+[Thu Jun 13 10:09:31.340771 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1985, in wsgi_app
+[Thu Jun 13 10:09:31.341008 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]     response = self.handle_exception(e)
+[Thu Jun 13 10:09:31.341091 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1540, in handle_exception
+[Thu Jun 13 10:09:31.341221 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]     reraise(exc_type, exc_value, tb)
+[Thu Jun 13 10:09:31.341297 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Thu Jun 13 10:09:31.341422 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]     response = self.full_dispatch_request()
+[Thu Jun 13 10:09:31.341500 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Thu Jun 13 10:09:31.341624 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]     rv = self.handle_user_exception(e)
+[Thu Jun 13 10:09:31.341700 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Thu Jun 13 10:09:31.341825 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]     reraise(exc_type, exc_value, tb)
+[Thu Jun 13 10:09:31.341899 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Thu Jun 13 10:09:31.342024 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]     rv = self.dispatch_request()
+[Thu Jun 13 10:09:31.342099 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Thu Jun 13 10:09:31.342224 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]     return self.view_functions[rule.endpoint](**req.view_args)
+[Thu Jun 13 10:09:31.342303 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]   File "/home/pi/Embryo/scripts/server_main.py", line 35, in get_image
+[Thu Jun 13 10:09:31.344644 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]     camera.capture('image.jpg')
+[Thu Jun 13 10:09:31.344742 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 1423, in capture
+[Thu Jun 13 10:09:31.359285 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983]     'Timed out waiting for capture to end')
+[Thu Jun 13 10:09:31.359575 2019] [wsgi:error] [pid 504:tid 1966408752] [remote 192.168.1.116:43983] PiCameraRuntimeError: Timed out waiting for capture to end
+[Thu Jun 13 10:10:31.495502 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984] mod_wsgi (pid=504): Exception occurred processing WSGI script '/home/pi/Embryo/scripts/flask_server.wsgi'.
+[Thu Jun 13 10:10:31.495856 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984] Traceback (most recent call last):
+[Thu Jun 13 10:10:31.496056 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1997, in __call__
+[Thu Jun 13 10:10:31.496267 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]     return self.wsgi_app(environ, start_response)
+[Thu Jun 13 10:10:31.496344 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1985, in wsgi_app
+[Thu Jun 13 10:10:31.496470 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]     response = self.handle_exception(e)
+[Thu Jun 13 10:10:31.496543 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1540, in handle_exception
+[Thu Jun 13 10:10:31.496665 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]     reraise(exc_type, exc_value, tb)
+[Thu Jun 13 10:10:31.496737 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Thu Jun 13 10:10:31.496858 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]     response = self.full_dispatch_request()
+[Thu Jun 13 10:10:31.496932 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Thu Jun 13 10:10:31.497052 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]     rv = self.handle_user_exception(e)
+[Thu Jun 13 10:10:31.497124 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Thu Jun 13 10:10:31.497244 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]     reraise(exc_type, exc_value, tb)
+[Thu Jun 13 10:10:31.497316 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Thu Jun 13 10:10:31.497436 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]     rv = self.dispatch_request()
+[Thu Jun 13 10:10:31.497509 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Thu Jun 13 10:10:31.497631 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]     return self.view_functions[rule.endpoint](**req.view_args)
+[Thu Jun 13 10:10:31.497706 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]   File "/home/pi/Embryo/scripts/server_main.py", line 35, in get_image
+[Thu Jun 13 10:10:31.497833 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]     camera.capture('image.jpg')
+[Thu Jun 13 10:10:31.497906 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]   File "/usr/lib/python2.7/dist-packages/picamera/camera.py", line 1423, in capture
+[Thu Jun 13 10:10:31.498048 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984]     'Timed out waiting for capture to end')
+[Thu Jun 13 10:10:31.498170 2019] [wsgi:error] [pid 504:tid 1932854320] [remote 192.168.1.116:43984] PiCameraRuntimeError: Timed out waiting for capture to end

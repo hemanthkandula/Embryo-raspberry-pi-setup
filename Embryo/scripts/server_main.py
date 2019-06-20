@@ -1,0 +1,43 @@
+from picamera import PiCamera
+from time import sleep
+import os
+import  shutil
+
+
+from flask import Flask, send_file,request
+app = Flask(__name__)
+
+camera = PiCamera()
+#camera.resolution = (2592 ,1944 )
+camera.resolution = (3280,2464 )
+#print("Starting preview.... wait 1 sec...")
+#camera.start_preview()
+#time.sleep(2)
+#camera.rotation =  180
+
+@app.route("/")
+def hello():
+    return "Shafiee Lab Embryo Imaging"
+
+@app.route("/get_image")
+def get_image():
+    slide  = request.args.get('slide', default = 'noname', type = str)
+    directory = '/home/pi/Embryo/data/'+slide +'/'
+    if not os.path.exists(directory):
+       os.makedirs(directory)
+
+    id = len(os.listdir(directory))
+    filePath = '/home/pi/Embryo/scripts/image.jpg'
+
+    if os.path.exists(filePath):
+        os.remove(filePath)
+
+    camera.capture(filePath)
+
+    shutil.copy2(filePath, directory+slide+'_'+str(id)+'.jpg')
+    return send_file(filePath, mimetype='image/jpg')
+
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=80)
+    print("server started")
