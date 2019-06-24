@@ -60,7 +60,7 @@ exit
 cd ~/Embryo/scripts
 virtualenv py3
 source py3/bin/activate
-pip3 install picamera flask
+pip3 install picamera flask pirc522 
 ```
 
 
