@@ -2,14 +2,23 @@ from picamera import PiCamera
 from time import sleep
 import os
 import  shutil
+import threading
+from queue import Queue
+
 
 
 from flask import Flask, send_file,request
-app = Flask(__name__)
 
+import RPi.GPIO as GPIO
+#from mfrc522 import SimpleMFRC522
+from uidtag import RC522Reader
+
+
+app = Flask(__name__)
 camera = PiCamera()
 #camera.resolution = (2592 ,1944 )
 camera.resolution = (3280,2464 )
+#camera.resolution = (640,480 )
 #print("Starting preview.... wait 1 sec...")
 #camera.start_preview()
 #time.sleep(2)
@@ -18,6 +27,34 @@ camera.resolution = (3280,2464 )
 @app.route("/")
 def hello():
     return "Shafiee Lab Embryo Imaging"
+
+@app.route("/server")
+def server():
+    return "server running v1.0"
+
+@app.route("/check_slide")
+def slide():
+    slide  = request.args.get('slide', default = 'noname', type = str)
+    try:
+        reader = RC522Reader()
+        text = reader.force_read_id()
+        #print(id)
+        #print(text)
+    finally:
+        GPIO.cleanup()
+    del reader
+    slide = slide.strip()
+    text = text.strip()
+
+    #return slide+text
+    #return text
+    if(text==slide):
+        return "Embryo dish ID matched"
+
+    elif (text!= slide):
+        return "Embryo dish ID is: "+text
+
+
 
 @app.route("/get_image")
 def get_image():
@@ -33,7 +70,7 @@ def get_image():
         os.remove(filePath)
 
     camera.capture(filePath)
-
+    
     shutil.copy2(filePath, directory+slide+'_'+str(id)+'.jpg')
     return send_file(filePath, mimetype='image/jpg')
 
@@ -41,3 +78,4 @@ def get_image():
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
     print("server started")
+
