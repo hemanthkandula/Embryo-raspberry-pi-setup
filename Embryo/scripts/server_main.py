@@ -5,12 +5,14 @@ import  shutil
 import threading
 from queue import Queue
 import RPi.GPIO as GPIO
+GPIO.setwarnings(False)
 
-GPIO.setmode(GPIO.BOARD)
-#GPIO.setmode(GPIO.BCM)
+#GPIO.setmode(GPIO.BOARD)
+GPIO.setmode(GPIO.BCM)
 
 pin= 2
 GPIO.setup(pin, GPIO.OUT)
+
 
 
 from flask import Flask, send_file,request
@@ -43,12 +45,11 @@ def server():
 def led_ctl():
     state  = request.args.get('state', default = 'off', type = str)
     if(state=="on"):
-        GPIO.output(pin,GPIO.HIGH) }
+        GPIO.output(pin,GPIO.HIGH) 
     else:
-        GPIO.output(pin,= GPIO.LOW)
-    
+        GPIO.output(pin, GPIO.LOW)
+    return str(GPIO.input(pin))
 
-    return "done"
 
 @app.route("/check_slide")
 def slide():
