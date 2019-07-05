@@ -42,11 +42,11 @@ def server():
 @app.route("/led")
 def led_ctl():
     state  = request.args.get('state', default = 'off', type = str)
-    if(state=="on"){
-    GPIO.output(pin,GPIO.HIGH) }
-    else{
-     GPIO.output(pin,= GPIO.LOW)
-    }
+    if(state=="on"):
+        GPIO.output(pin,GPIO.HIGH) }
+    else:
+        GPIO.output(pin,= GPIO.LOW)
+    
 
     return "done"
 
