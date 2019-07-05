@@ -4,7 +4,13 @@ import os
 import  shutil
 import threading
 from queue import Queue
+import RPi.GPIO as GPIO
 
+GPIO.setmode(GPIO.BOARD)
+#GPIO.setmode(GPIO.BCM)
+
+pin= 2
+GPIO.setup(pin, GPIO.OUT)
 
 
 from flask import Flask, send_file,request
@@ -31,6 +37,18 @@ def hello():
 @app.route("/server")
 def server():
     return "server running v1.0"
+
+
+@app.route("/led")
+def led_ctl():
+    state  = request.args.get('state', default = 'off', type = str)
+    if(state=="on"){
+    GPIO.output(pin,GPIO.HIGH) }
+    else{
+     GPIO.output(pin,= GPIO.LOW)
+    }
+
+    return "done"
 
 @app.route("/check_slide")
 def slide():
